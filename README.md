@@ -1,6 +1,19 @@
 # project_customize_vscode_comment_style
 Customize Vscode Code/Comment Style
 
+- [project_customize_vscode_comment_style](#project_customize_vscode_comment_style)
+- [实现原理](#实现原理)
+- [准备工作](#准备工作)
+  - [学习 json.schemas](#学习-jsonschemas)
+  - [启用 Scope inspector](#启用-scope-inspector)
+- [开始配置](#开始配置)
+  - [作用域信息收集](#作用域信息收集)
+  - [处理作用域信息](#处理作用域信息)
+  - [通过作用域来配置颜色](#通过作用域来配置颜色)
+- [再进一步](#再进一步)
+  - [集成第三方 theme(以 Dracula 为例 )](#集成第三方-theme以-dracula-为例-)
+  - [用插件让您的注释更加绚丽!](#用插件让您的注释更加绚丽)
+
 > 通过本项目, 实现 vscode 的自定义代码颜色渲染
 
 # 实现原理
