@@ -1,6 +1,8 @@
 # project_customize_vscode_comment_style
 Customize Vscode Code/Comment Style
 
+> 通过本项目, 实现 vscode 的自定义代码颜色渲染
+
 - [project_customize_vscode_comment_style](#project_customize_vscode_comment_style)
 - [实现原理](#实现原理)
 - [准备工作](#准备工作)
@@ -14,7 +16,6 @@ Customize Vscode Code/Comment Style
   - [集成第三方 theme(以 Dracula 为例 )](#集成第三方-theme以-dracula-为例-)
   - [用插件让您的注释更加绚丽!](#用插件让您的注释更加绚丽)
 
-> 通过本项目, 实现 vscode 的自定义代码颜色渲染
 
 # 实现原理
 通过设置 vscode settings.json 的 "editor.tokenColorCustomizations" -> "textMateRules" 来实现自定义代码颜色渲染
