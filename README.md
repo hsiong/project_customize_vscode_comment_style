@@ -15,6 +15,7 @@ Customize Vscode Code/Comment Style
 - [再进一步](#再进一步)
   - [集成第三方 theme(以 Dracula 为例 )](#集成第三方-theme以-dracula-为例-)
   - [用插件让您的注释更加绚丽!](#用插件让您的注释更加绚丽)
+    - ["color" 配置调用 vscode build-in 画板](#color-配置调用-vscode-build-in-画板)
 
 
 # 实现原理
@@ -304,10 +305,47 @@ https://github.com/aaron-bond/better-comments
       "italic": false
     }
   ],
-  ```
+```
 
   效果如下
 
   ![image](https://user-images.githubusercontent.com/37357447/172337362-c22a5954-a658-4f60-926e-d0404e10e165.png)
 
-  
+### "color" 配置调用 vscode build-in 画板
+
+> 您是否觉着之前让您学习 json.schemas 有些多余, 现在, 您会发现 json.schemas 在 vscode 中的强大之处
+
+在 vscode settting.json 中通过 `json.schemas` 实现标签 "better-comments.tags": "color" 调用 vscode 画板
+
+```
+  /**
+  * configure build-in color pick
+  * @note use json-schemas https://json-schema.org/learn/
+  * @demo https://json-schema.org/learn/examples/card.schema.json
+  */
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "*.json"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "better-comments.tags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string",
+                  "description": "toolbar colour: hex only",
+                  "format": "color"
+                }
+              }
+            }
+          },
+        }
+      }
+    }
+  ]
+```
