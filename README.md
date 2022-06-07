@@ -20,7 +20,7 @@ Customize Vscode Code/Comment Style
 # 实现原理
 通过设置 vscode settings.json 的 "editor.tokenColorCustomizations" -> "textMateRules" 来实现自定义代码颜色渲染
 
-**Demo**
+**Demo**  
 如果您懒得折腾, 可以直接 `copy` 下面的配置代码到您的 settings.json, 即可简单实现 js/css 的单行/多行/块注释颜色自定义. 
 
 然而, 如果您学习本项目, 可以完全实现 vscode 所有代码颜色的自定义, 何乐而不为呢? 
