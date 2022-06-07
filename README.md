@@ -251,7 +251,7 @@ node ./scripts/build.js
 ## 用插件让您的注释更加绚丽! 
 better-comments 是一款用于 vscode 代码注释渲染的插件, 通过捕获注释代码行内的特殊字符, 来渲染指定的颜色
 
-**Reference**
+**Reference**  
 https://github.com/aaron-bond/better-comments
 
 例子如下
@@ -307,9 +307,9 @@ https://github.com/aaron-bond/better-comments
   ],
 ```
 
-  效果如下
+效果如下
 
-  ![image](https://user-images.githubusercontent.com/37357447/172337362-c22a5954-a658-4f60-926e-d0404e10e165.png)
+![image](https://user-images.githubusercontent.com/37357447/172337362-c22a5954-a658-4f60-926e-d0404e10e165.png)
 
 ### "color" 配置调用 vscode build-in 画板
 
